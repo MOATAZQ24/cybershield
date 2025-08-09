@@ -1,0 +1,59 @@
+# CyberShield Project Overview & File Descriptions
+
+## Project Overview
+
+**CyberShield** is a web-based interactive simulation platform designed to demonstrate and educate about **DDoS (Distributed Denial of Service) attack detection and mitigation**. It provides a practical, visual environment where users can simulate various DDoS attack types, observe real-time network traffic, and visualize attack detection using a simplified, rule-based machine learning approach. The project aims to make complex cybersecurity threats understandable through hands-on, visual simulation.
+
+**What the project DOES:**
+- Simulates various DDoS attack types (SYN Flood, UDP Flood, HTTP Flood)
+- Displays real-time network traffic and metrics
+- Demonstrates a simplified, rule-based machine learning detection mechanism
+- Provides an interactive web interface for controlling simulations and viewing results
+- Offers a full-stack web application experience (frontend and backend)
+- Is suitable as an educational tool and a graduation project
+
+**What the project DOES NOT do (current version):**
+- Does not use complex, real-world trained machine learning models
+- Does not integrate with real network traffic or live systems
+- Does not perform actual mitigation actions on a network
+- Does not include advanced cybersecurity tools like Wireshark or Nmap
+
+**Frameworks Used:**
+- **Frontend**: React (with Vite, Tailwind CSS, shadcn/ui, Recharts)
+- **Backend**: Flask (Python)
+- **API**: RESTful APIs
+
+**Setup:**
+The project can be set up using the `run_cybershield.sh` script or through manual installation.
+
+---
+
+## File Descriptions
+
+### `cybershield-backend/`
+Contains the Flask backend application.
+
+- **`src/main.py`**: Main entry point for Flask backend. Initializes app, configures CORS, registers API blueprints.
+- **`src/routes/ddos_simulation_simple.py`**: Defines API endpoints for DDoS simulation and detection logic.
+- **`requirements.txt`**: Lists Python dependencies for backend.
+
+### `cybershield-frontend/`
+Contains the React frontend application.
+
+- **`src/App.jsx`**: Main React component that renders the UI and manages application state.
+- **`src/main.jsx`**: Entry point for React application.
+- **`src/App.css`**: Custom CSS styles for the application.
+- **`src/index.css`**: Imports Tailwind CSS and base styles.
+- **`src/components/ui/`**: Contains UI components from shadcn/ui.
+- **`src/lib/utils.js`**: Utility functions for frontend.
+- **`vite.config.js`**: Configuration for Vite build tool.
+- **`tailwind.config.js`**: Configuration for Tailwind CSS.
+- **`package.json`**: Defines project metadata and dependencies.
+
+### Other Important Files On /doc
+- **`run_cybershield.sh`**: Automates setup and execution of both backend and frontend.
+- **`DOCUMENTATION.md`**: Comprehensive project documentation.
+- **`graduation_project_profile.md`**: Project profile outlining idea and methodology.
+- **`graduation_project_profile_ar.md`**: Arabic version of project profile.
+- **`backend_architecture.png`**: Diagram of backend architecture.
+- **`execution_guide.md`**: Detailed execution guide.

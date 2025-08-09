@@ -1,0 +1,1 @@
+cmd //c run_cybershield.bat && npm --prefix cybershield-frontend run dev
