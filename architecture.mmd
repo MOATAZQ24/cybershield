@@ -1,0 +1,11 @@
+graph TD
+    A[User] -->|Accesses| B(Frontend - React/TailwindCSS)
+    B -->|API Calls/WebSockets| C(Backend - Python/Flask)
+    C -->|Database Interactions| D[Database]
+    C -->|Real-time Data| E(WebSocket Server - Flask-SocketIO)
+    E -->|Simulation Control| F[Docker Containers - Isolated Simulation Environments]
+    F -->|Network Traffic/Logs| C
+    B -->|Visualization| G(Three.js/vis.js)
+    C -->|Container Orchestration| H[Docker]
+
+
